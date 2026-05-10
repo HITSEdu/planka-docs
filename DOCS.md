@@ -2,4 +2,4 @@
 
 * [Redmine](https://redmine.freydin.space/projects/planka)
 * [Figma]()
-* [UseCase Diagram](USECASE.md)
+* [UseCase Diagram](docs/USECASE.md)
