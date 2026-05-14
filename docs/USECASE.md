@@ -1,4 +1,4 @@
-# Диаграмма UseCase
+# Диаграмма вариантов использования
 
 
 ```mermaid
@@ -6,6 +6,8 @@ graph LR
     U((Пользователь)) --> Auth[Авторизация]
     Auth[Авторизация] --> Login[Вход]
     Auth --> Register[Регистрация]
+    Auth --> Logout[Выход]
+    Auth -->  ChangePassword[Изменить пароль]
     U --> F[Вкладка с друзьями]
     F --> Add_F[Добавить друга]
     F --> Remove_F[Удалить из друзей]
@@ -16,5 +18,6 @@ graph LR
     Task --> Add_private_Sch[Добавить скрытое дело]
     Task --> Add_Task[Добавить дело]
     Task --> Delete_Task[Удалить дело]
-    
+    Add_Task --> Tag[CRUD для тэгов]
+    Tag --> Color[Добавить цвет для тэга]
 ```
